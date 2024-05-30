@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 55px;
+            border: 2px solid blue;
+            height: 100px;
+            /* agar yaha par hmne box-sizing nhi di toh sirf content ki height ya width 100 hogi agr dedi toh sab ki milake 100 hogi sivaye margin ke kyuki woh bar ki side hai isliye */
+            box-sizing: border-box;
+            /* In simple words we can say that yeh height padding and border ko include karke hai isme margin include nhi hai */
+        }
+
+        .box2{
+            color:red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 100px;
+            box-sizing: border-box;
+            /* MARGIN COLLAPSE = box 1 and 2 ki margin collapse hogi yani ki dono ki margin me se maximum margini ek ba ayegi */
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box box1">I am a box.</div>
+    <div class="box box2">I am a 2nd box.</div>
+
+</body>
+</html>

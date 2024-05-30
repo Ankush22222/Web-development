@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Masrtrclass</title>
+    <!-- CSS SELECTORS -->
+    <style>
+        /* 1.Elements Selectors */
+        div {
+            background-color: red;
+        }
+
+        /* If I want to change background color of another div but from uper side technique all divs are in red 
+          so we use class ="red" */
+
+        /* 2.Class Selector */
+        .blue {
+            background-color: aquamarine;
+        }
+
+        /* 3.Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* 4.Child Selectors */
+        div>p {
+            color: blue;
+            background-color: brown;
+            /* ise hum div ke ander sirf p hai toh hi apply hoga agar span ke ander ya article ke ander daldiiya toh nh hi show hoga */
+        }
+
+        /* 5.Descendant Selector */
+        div p {
+            color: aquamarine;
+            background-color: skyblue;
+            /* agar div ke ander span ya article ke ander p ko dala gaya hai toh hum use is tarike se krenge toh  */
+        }
+
+        /* 5.Universel Selectors */
+        *{
+            margin: 0;
+            padding: 0;
+            /* ise sab pass-pass me chipak jayenge */
+        }
+
+        /* 6.Pseudo Selectors */
+        a:visited{
+            color: red;
+            /* agar visit kiya hai toh  go to google ka color red ho jayega */
+        }
+
+        a:link {
+            color: green;
+            /* agar visit nhi kiya hai toh color green ho jayega  */
+        }
+
+        a:active {
+            background-color: red;
+            /* kisi bhi link par click kar rahe ho tob color red hojaye toh eska use krenge */
+        }
+
+        a:hover {
+            background-color: aquamarine;
+        }
+
+        p:first-child {
+            background-color: aquamarine;
+            /* toh yeh first ko color kar dega */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        I am a div.
+        <p>Hey bro how are you </p>
+    </div>
+
+    <div>
+        I am a div.
+        <span>
+            <p>Hey bro how are you </p>
+        </span>
+    </div>
+
+    <div class="blue">
+        I am a another div.
+    </div>
+
+    <div id="green">
+        I am also a another div.
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
+    <main class="one">
+        <p>I am first bro.</p>
+        <p>I am second bro.</p>
+    </main>
+
+</body>
+
+</html>
