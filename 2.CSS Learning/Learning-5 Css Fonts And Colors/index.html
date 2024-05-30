@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Fonts And Colors</title>
+    <style>
+        /* import url se koi bhi font import kar sakte hai hum or font family bhi copy kar ke paste kar sakte hai hum jaise humne baloo bahi me kiya hai */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            /* font-style: italic; */
+            /* agar bold krna hai toh font-weight ka istmal krna hoga */
+            font-weight: 500;
+            /* agair font ke niche hame underline krna hai toh hum text-decoration ka use kar sakte hai */
+            /* text-decoration: underline; */
+            font-family: "Baloo Bhai 2", sans-serif;
+            /* font-size se font ki size badi ho jayegi */
+            font-size: 20px;
+            /* ise height between two lines increase ho jayegi */
+            line-height: 4;
+            /* letter ke bich ki spacing ko badne ke liye hum iska use kar sakte hai */
+            letter-spacing: 2px;
+        }
+
+    
+
+        h2{
+            text-align:center ;
+            /* sab center me allign ho jayenge */
+            text-transform:uppercase;
+            /* capitalize ise 1st letter sbke capitalixe ho jayenge
+            uppercase and lower case se sab bade ya chote ho jayenge*/
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 7px;
+            /* ise dooted line ki thickness bad jayegi */
+            text-indent: 45px;
+            /*  text-indent se right side move ho jayega */
+            text-overflow: ellipsis;
+        }
+
+        .Lorem {
+            border: 2px solid blue;
+            width: 145px;
+            /* word-break:break-all se word jaha tak kine me aa skte hai ayenge baki break hoke agli line me chale jayenge */
+            word-break:break-all;
+            /* text-overflow: ellipsis; */
+            /*hmne border ke ander joh written hai uski width badhti toh overflow hoga yani text bar ayega border ke hum chahte hai kis type ka overflow ho to hum text-overflow ka use krenge*/
+            /* overflow: hidden; */
+            /* iska use hum tab krenge jab text overflow ho raha hai or hide krna chahte hai ya likha hua jitne hai utna print krna chahte hai toh hum iska use karenge overflow ka use hoga yha par */
+        }
+    </style>
 </head>
 <body>
     
-    
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This learning contain fonts.</p>
+        <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, enim natus. Tenetur odio quasi consectetur possimus, incidunt, similique minima illum atque porro voluptatibus consequuntur? Fugiat sint et ex provident amet ab quae voluptatem, eligendi labore odio doloribus similique! Quis deleniti atque nesciunt omnis cumque recusandae!</p>
+        
+    </div>
 </body>
 </html>
