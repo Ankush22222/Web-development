@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 432px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+
+
+            /* position: relative; */
+            /* agar me chahta hu box1 box 2 ke upar aa jaye toh z-index ka use karenge */
+            /* z-index: 1; */
+            /* ab me z ki value 0 ke alva kuch bhi karunga toh box1 upar aa jayega box2 ke jaise ki value 1 ya 2 */
+            position: absolute;
+            top: 0px;
+            left: 4px;
+            /* top 0 karte hi yeh apne parent se bahar chala jayega or top badha te hi yeh top se niche ane lagega  */
+
+            /* left bada te hi yeh right side move ho jayega */
+
+            /* yeh upar absolute jab parent se bahar jayega tab parent me position:absolute nhi laga huaa hai */
+
+
+            /* top: 0px; */
+            /* agar parent me position:absolute laga diya toh yeh ab ane parent se bahar nhi jayega */
+            /* left: 100px; */
+            /* agr left badyenge toh yeh apne parent ke relative right me move karega */
+
+            /* position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            padding: 0;
+            margin: 0; */
+
+            /* position sticky lagate hi voh vaha chipak jayega 
+            iskok ham nave baar banana ke liye use karenge */
+
+
+
+        }
+
+        .box2 {
+            background-color: blue;
+            /* position: relative; */
+            /* ise hum iska top-bottom and left-right move kar sakte hai */
+            /* top: -50px;
+            left: 50px; */
+        }
+
+        .box3 {
+            background-color: coral;
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw; */
+            /* ab ham agar page ko scroll bhi karenge na toh yeh box3 fix rahega position fix lagane ke baad */
+        }
+
+        .box4 {
+            background-color: aqua;
+
+        }
+
+        /* by defualt sab boxes ki position static(means jaha par tha vahi par rahega) hoti hai  */
+
+
+        .parent {
+
+            padding: 44px;
+            margin: 55px;
+            border: 2px solid purple;
+            position: relative ;
+            /* agar maine box1 me position absolute laga diya and parent me koi bhi position laga di toh woh apne parent ke respect me chalega yani ane parent se bahar nhi jayega  */
+
+            /* transform: translate(0); */
+            /* EXEPCTION : Agar maine transform,filter, or perspective properties hogi toh bhi yeh use position man lega */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
+    </div>
+</body>
+
+</html>

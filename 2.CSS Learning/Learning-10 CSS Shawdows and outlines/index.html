@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shawdows and outlines</title>
+    <style>
+        .box {
+            border: 2px solid blue;
+            padding: 34px;
+            box-shadow: 5px 14px 5px #cb0606;
+            /* box-shawdow: h-offset v-offset blur spread color inset*/
+        }
+
+        .text {
+            text-shadow: 2px 2px 4px #0996e7;
+            /* text-shadow: h-offset v-offset blur color */
+            border: 2px solid orange;
+            border-radius: 4px;
+            /* border ko radius de sakte hai par outline ko radius nhi de sakate  */
+            outline: 2px solid black;
+            /* border ander hoti hai or outlilne bahar hoti hai */
+            outline-offset: 4px;
+            /* outline-offset se outline ki duri bad jayegi */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        I am a box.
+    </div>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur dolorem dolorum possimus
+        ex blanditiis nostrum ad assumenda cupiditate magnam, error dignissimos quae?</p>
+
+</body>
+
+</html>

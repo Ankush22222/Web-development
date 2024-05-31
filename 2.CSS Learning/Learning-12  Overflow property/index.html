@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow property</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto;
+            /* overflow ko individual bhi likh sakte hai  */
+            /* overflow-x: hidden;
+               overflow-y: scroll; */
+            /* overflow: hidden scroll; */
+            /* agar overflow x and y dono skte hai sath me */
+            /* ise overflolw: scroll thik ho jayega and scroll bar aa jayega
+            overflow: auto se agar overflow hoga toh scroll bar ayega warna nhi aayega 
+            vw and vh jyade hote toh overflow nhi karta*/
+            /* white-space: nowrap; */
+            /* horizontal me scroll bar aa jayega word nche nhi ayenge */
+            /* text-overflow: ellipsis; */
+            /* ise dot aa jayega */
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        I am a good box. I will write Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat
+        deleniti perferendis tenetur, molestiae amet? Ex repellendus, omnis porro architecto ipsa qui cumque
+        reprehenderit voluptas veritatis commodi dolorem veniam, ad nobis voluptatem ratione! Earum blanditiis assumenda
+        atque, maiores inventore voluptate ad consequuntur temporibus harum commodi?
+    </div>
+
+</body>
+
+</html>

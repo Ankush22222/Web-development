@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* display: inline; */
+            /* div joh block element hai voh display inline lagane se inline element ki tarah kam karega  or isme margin or padding use kene par top nhi lagegi kyuki hamne isko inline banaya hai isliye*/ 
+            display: inline-block;
+            /* display: inline-block ka use karne se margin padding width height sab thik ho jayega */
+            padding: 45px;
+            margin: 20px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            /* dono lagate hi box ka contentb center me aa jayega */
+        }
+
+        .box1{
+            /* display: none; */
+            /* pehli div joh hai voh uska box for or jagah gayab ho jayegi  */
+            visibility: hidden;
+            /* ise box hide ho jayega par uski jagah aisi ki aisi hi rahegi */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box">
+        I am also nice box.
+    </div>
+
+</body>
+
+</html>
