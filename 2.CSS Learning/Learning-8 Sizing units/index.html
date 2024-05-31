@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sizing units</title>
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            font-size: 11px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            /* pura area cover kar leg */
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            /* vh hmesa 10 percent height hi lega view port ki 10vh lagane se */
+            margin: auto;
+            /* agar 80vw karke and margin auto se center ho jayega or yeh sirf block elements me hi hoga inline elements me nhi hoga*/
+            /* 100vw se yeh har device ke according set hojayegi or  chalegi */
+            background-color: aquamarine;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* min -height toh rakhni hai taki content min height rakhe hamari website acchi dikhe or maximum teh jitni le ske utni thik*/
+            /* vh hmesa 80 percent heught hi lega view port ki 80vh lagane se */
+            margin: 23px auto;
+            /* 23 lagate hi top me 23px margin aajayega or left and right auto hi rahenge */
+            font-size: 20px;
+            background-color: aquamarine;
+
+
+        }
+
+
+
+        .container p {
+            /* font-size: 2em; */
+            /* em means jitna milne wla tha  font size 20 se 2 gunna badd jayegi  */
+            /* 20 ps ko hata te hi default 16px milne wala tha ab uska 2 gunna yani 32px milega */
+            font-size: 2rem;
+            /* rem means root(html is root element) ka 2 gunna ho jayega 11 ka 22 ho jayega */
+            width: 50%;
+            /* % unit means parent ki width ki itne % kardo  */
+            border: solid red 2px;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: blue;
+            font-size: 22px;
+            width: 80vw;
+            /* VMIN = 100vmin is equal to 100vh for this device not for all device */
+            /* VMAX = hum chate hai phone me vh ho jaye or computer me vw ho jaye toh hum vmax ka use karte hai  */
+
+
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum amet nisi possimus! Sapiente doloremque
+            dolore maiores perspiciatis repellendus in cumque nam inventore odio?</p>
+    </div>
+
+
+    <div class="mycont">
+        I am another container.
+    </div>
+
+    <!-- <span class="box">
+        This is a box.
+         span ke ander nhi hoga kyuki span inline hai joh bhi ikse ander likhenge voh usi line ke ander aayega 
+    </span> -->
+
 </body>
+
 </html>
