@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and cascade</title>
+    <style>
+
+
+        h1 {
+            color: aqua;
+            /* The specificity of this selector is 1 */
+        }
+
+        h1.yellow {
+            color: yellow;
+            /* The specificity of this selector is 1+10=11 
+            toh ab color yellow ho jayega kyu ki iske specificity 11 ho gayi hai isliye */
+        }
+
+        .cred {
+            color: red;
+            /* The specificity of this selector is 10 */
+
+        }
+
+        .yellow {
+            color: yellow;
+            /* The specificity of this selector is 10 */
+
+        }
+
+        .cpurple {
+            color: purple;
+            /* The specificity of this selector is 10 */
+
+        }
+
+
+
+        /* href attribute hai 
+        hover joh voh pseudo hai */
+        a.joyclass.rohan-class[href]:hover {
+            color: blueviolet;
+            /* The specificity of this selector is 1+10+10+10+10=41*/
+        }
+
+        /* THE CASCADE ALGORITHM */
+
+        /* 1.POSITION AND ORDER OF APPEARANCE BASIS = for upper three in the view of same selector (postion and appearance basis ) agar ek hi tarah ka selesctor hai tohjoh last ke hoga ho excute hoga isme h1 nhi hoga tab*/
+
+
+        /* 2.SPECIFICITY = agar h1 hai toh hum specificity ke  basis par exicute hoga
+         Inline style > ID selector > Class or atrribute selector > Elemnet selector > Universal selector */
+
+           /* FOR specificity calculatioN: */
+        /* to calculate specificity,assign value to each part of the selector :
+        
+        * Universal selector:0
+        * Element selector and pseudo element: 1
+        * Class selectors,attribute selectors and pseudo classes: 10
+        * ID selectors:100
+        * Inline style:1000
+        * Important:10000    */
+
+
+
+        /* 3.ORIGIN = agar hmne koi style sheet nhi lagayi hai toh browser kik apni style sheey hoti hai */
+
+
+        /* 4.IMPORTANCE = agar kahi par !important laga diya toh fir voh inline css ko  bhi overrighth karega ,eans important vale style ko phle exicute karega */
+
+
+        /* [data-x=a] {
+            color: aquamarine;
+             This is a attribute. 
+            /* The specificity of this selector is 10.
+
+        } */
+
+        
+       /*  .cred {
+            color: skyblue !important;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">This is about Specificity.</h1> 
+    </div>
+
+</body>
+
+</html>
