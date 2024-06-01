@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+
+        @media screen and (orientation: landscape) {
+            body{
+                border: 2px solid black;
+                /* jaise hi website ki size landscape se potrait ho jayege toh boder gayb ho jayegi */
+            }
+            
+        }
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: blue;
+            }
+
+            /* ham  media queries ka use ham jab karte hai tab hame responsive web banati hoti hai */
+
+                /* agar me chahta hu ke choti screen par yeh boxex column me aa jaye toh hum .boxes ka media queries me type krenge */
+                
+                .boxes {
+                    flex-direction: column;
+                }
+        }
+
+        /* media only screen means jab screen par hai tabhi apply hogi */
+
+
+
+
+         
+        .boxes{
+            display: flex;
+            
+        }
+        .box {
+            width: 244px;
+            height: 244px;
+            background-color: aquamarine;
+            padding: 4px;
+            margin: 4px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        I am a red body box;
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

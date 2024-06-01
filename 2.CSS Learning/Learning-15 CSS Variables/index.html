@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color:blue;
+            --seccolor:rgb(108, 108, 227);
+            /* inse ham color change kar skte hai declare kiye huye color se */
+             --defpad: 23px;
+             --defop: 0.2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background-color: var(--color)
+        }
+
+        ul li{
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defpad);
+            /* hum kisi me bhi variable ka use kar sakte aahi */
+        }
+
+        ul li:first-child{
+            opacity: var(--defop);
+            /* iska color fade ho jayega */
+            --color:rgb(113, 237, 41);
+            background-color: var(--color);
+            border: 11px solid var(--seccolor);
+            /* border bhi aise laga sakte hai */
+            /* ab humnw agar --color global variable ko local variable ke ander rakh diya toh yeh over write hokar green color joh diya fist child ke ander voh show hoga fist chalid ke liye */
+            /* agar color is not found aay toh sode me color declare kar denge */
+            /* background-color: var(--color,blue); */
+        }
+        ul{
+            display: flex;
+        }
+        .container{
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto reprehenderit quae nihil voluptates temporibus sunt distinctio vitae quasi fuga perferendis, blanditiis tenetur eos dolor obcaecati recusandae, dignissimos culpa. Voluptate, ad dolor quos repellendus cupiditate hic libero ex a sint, nostrum facilis nulla. Cumque, molestias hic?</div>
+    
+</body>
+</html>
