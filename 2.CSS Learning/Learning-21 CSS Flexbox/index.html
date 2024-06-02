@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* display flex means ab aap flex box ki properties ka istemal kar sakte ho */
+            /* justify-content: center; */
+            /* ise content center me aa jayega  */
+            align-items: center;
+            /* jayada tar flexstart flexend and center use karenge */
+            /* ise item center me aa jayengte container ke */
+            /* display flex se item right side me ho jayenge ek line me toh hu use MAIN AXIS bolenge */
+            /* and jisme lay nhi ho rahe usko hu CROSS AXIS bolenge */
+            /* flex-direction: column; */
+            /* rows me na lekarke coloumn me sab items ayengi */
+            /* flex-direction: column-reverse; */
+            /* ise colooumn reverse ho jayenge */
+            /* row me bhi hum  iski tarah same ho flex direction row and reverse me kar sakte hai */
+            flex-wrap: wrap;
+            /* ise jitni bhi item thi joh compress ho rahi thi item number bada ne par ab ho nhi hog voh sab wrap ho kar niche a jayegi */
+            /* align-content: center; */
+            /* agar hamare pas one line hai toh hum align-content ka istemal karenge and more than one line hai toh hum align-item ka istemal karenge  */
+
+
+            /* flex-flow: row wrap; */
+            /* ise hum yeh bta skate hai ki wrap kaha krna hai row wrap ya coloumn wrap */
+            gap: 40px;
+            /* sab item ke bich ka gap vertically and horizontaly 40px ho jayega is property ka use karke */
+            /* we can also define row and coloumn gap individually */
+            /* row-gap: 20px; */
+            /* and we can also write as */
+            /* gap: 20px 10px; */
+
+            /* YEH PROPERTY SIRF CONTAINER ME HI USE HONGI */
+
+        }
+
+
+
+
+
+        .item {
+            /* flex-grow: 1; */
+            /* means sab items ek item ki jage hi lenge */
+            height: 92px;
+            width: 92px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order3 {
+            order: 3;
+        }
+
+        .order4 {
+            order: 4;
+        }
+
+        .item1 {
+            /* flex-grow: 5; */
+            /* ab yeh do item ki jage lega */
+            flex-shrink: 2;
+            /* ise item double speed se shrink hoga sab hum ise responsive me kam ya jyada karenge tab */
+            align-self: flex-end;
+            /* ise sirf item1 hi align hoga */
+        }
+
+        /* yeh property item ke liye hain */
+        /* jiska jyada order voh item sabse last me aayega 
+        jiska order kam hoga voh pehle ayega*/
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order1">4</div>
+            <!-- iska order jaise ki 4 hai toh yeh iske ander order1 lagte hi last me ayega  -->
+            <div class="item"></div>
+            <div class="item"></div>
+            <!-- <div class="item order1">50</div> -->
+            <!-- iska order 4 se jyade hai toh iske ander order lagane par yeh 4 ke baad me aayega -->
+
+        </div>
+    </main>
+
+</body>
+
+</html>
