@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Design</title>
     <style>
+        :root{
+            --color:rgb(110, 154, 237);
+            --seccolor:salmon;
+            --anocolor:blue;
+            --lastcolor:rgb(94, 222, 117);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +21,7 @@
             box-sizing: border-box;
             width: 1536px;
             height: 40px;
-            background-color: pink;
+            background-color:var(--color);
             position: sticky;
             top: 0px;
         }
@@ -30,18 +36,18 @@
         }
 
         .box1 {
-            background-color: salmon;
+            background-color: var(--seccolor);
 
         }
 
         .box2 {
-            background-color: blue;
+            background-color: var(--anocolor);
 
             margin-left: 736px;
         }
 
         .color {
-            background-color: green;
+            background-color: var(--lastcolor);
             height: 400px;
             width: 1536px;
             display: flex;
