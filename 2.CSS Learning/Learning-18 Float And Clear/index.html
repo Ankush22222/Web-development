@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float And Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* ise joh immage overflow ho rahi thi voh nhi hogi overflow */
+        }
+     img{
+        float: left;
+        /* sab kuch left me chala jayega float right krne se content right me chala jata */
+     }
+
+     .card{
+        border: 2px solid red;
+     }
+     .card:nth-child(3) {
+        background-color: aquamarine;
+        clear: left;
+        /* ab iske left me koi bhi elemnet flow nhi karega but right me toh allowed agr clera both kar diya toh dono side nhi aayega */
+     }
+    </style>
+</head>
+<body>
+
+    <div class="cards">
+        <img width="230px" src="image.png" alt="Image">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat accusamus, impedit perspiciatis facere corrupti rem ea, eos aliquam, mollitia illo vero quae!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi in voluptates nemo eaque assumenda, deserunt incidunt aspernatur fugiat asperiores beatae libero dolore sed molestias ab dolorem quidem voluptate necessitatibus nulla? Consequuntur, ullam quis! Repudiandae expedita asperiores, et harum suscipit sequi nulla dolor enim nisi molestias aliquam! Fugiat inventore vel sequi maxime quidem dolores facere repellendus quaerat dicta culpa totam, magni similique tenetur commodi, odio temporibus quae fugit! Architecto sunt est tempora repellat debitis ipsam totam rem quam repudiandae quidem corrupti, quas veritatis eum expedita odit voluptatum perferendis laudantium? Et necessitatibus qui dolores pariatur natus optio, fugit quia repellat fuga facere atque unde quo earum aliquam id odio vero corrupti vel, rerum ipsum dolorem ratione voluptates labore blanditiis? Repellat numquam nostrum at et, quo quia molestiae, esse impedit recusandae quasi tenetur ea, officiis laborum maiores? Repudiandae dignissimos, beatae doloremque commodi distinctio laudantium nesciunt perspiciatis impedit error aliquid. Aut laborum maxime ex facilis suscipit vero id nobis animi error accusantium tempora aspernatur quam eveniet minima qui voluptatibus, molestias, facere temporibus amet, ipsum asperiores. Illum dolores eos voluptas distinctio molestias suscipit minus magnam commodi consequatur fugit iste ea, excepturi officia deserunt impedit? Nesciunt, officiis nam tenetur laudantium nulla id accusamus neque asperiores sunt perferendis nisi impedit suscipit cum ex iste quisquam dolorem minima quis quod recusandae aspernatur cupiditate a voluptate omnis! Sit impedit saepe excepturi quam enim, aliquid ducimus illum voluptas vitae vero exercitationem, ipsum a tempore unde earum? Rem porro distinctio praesentium fugit a molestias?</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>

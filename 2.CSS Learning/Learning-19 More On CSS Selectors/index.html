@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        /* .boxes :first-child{
+            background-color: red;
+        } */
+        /* .boxes :first-line{
+             ise har div ki pahli line ka color yellow ho jayega
+            color: yellow;
+        } */
+
+
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+            i    se sab ke ander apply ho jayega
+        } */
+
+        /* [data-color="primary"] {
+            attribute selector hai yeh 
+            margin-top: 40px;
+        } */
+
+        /* .box, [data-color="primary"] {
+            aise hum grouping kar sakte hai
+            margin-top: 40px;
+            padding-top: 45px;
+        } */
+
+        /* .boxes :nth-child(even) {
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(1) {
+            background-color: red;
+            bottom se joh first hoga voh red o jayega
+        } */
+
+        /* .boxes::before{
+            content:"Box is a good.";
+            element dynamicaly css ke through insert kiya ja sakta hai before content ka use lane se isi tarah after content ko bhi use kar skate hai jise content sabse last line me aayega before se sbase upar wali line me aayega
+        } */
+
+      /* ::selection{
+        color: aquamarine;
+        background-color: black;
+        ise select karne par color change and background color bhi change ho jayega
+      } */
+
+
+      .box::first-letter{
+        color: palegreen;
+        font-size: 45px;
+      }
+
+      input::placeholder{
+        color: red;
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a first box.</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>

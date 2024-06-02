@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bar {
+            box-sizing: border-box;
+            width: 1536px;
+            height: 40px;
+            background-color: pink;
+            position: sticky;
+            top: 0px;
+        }
+
+
+        .box {
+            height: 300px;
+            width: 300px;
+            margin: 50px;
+
+
+        }
+
+        .box1 {
+            background-color: salmon;
+
+        }
+
+        .box2 {
+            background-color: blue;
+
+            margin-left: 736px;
+        }
+
+        .color {
+            background-color: green;
+            height: 400px;
+            width: 1536px;
+            display: flex;
+        }
+
+        .text {
+            border: 2px solid black;
+            text-align: center;
+            padding: 40px;
+            margin: 100px;
+            font-size: 80px;
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+
+        footer {
+            box-sizing: border-box;
+            background-color: black;
+            width: 1536px;
+            height: 40px;
+            margin-top: 200px;
+           
+        }
+        svg{
+            margin-left: 1400px;
+            position: fixed;
+            top: 500px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <nav class="bar"></nav>
+    <div class="color">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+    <div>
+        <h1 class="text">Welcome on our first layout of our website of web development</h1>
+        <svg width="40px" height="50x">
+            <circle cx="20" cy="30" r="20" stroke="balck" stroke-width="2" fill="orange"  />
+
+        </svg>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
