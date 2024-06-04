@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Transitions</title>
+    <style>
+        .container{
+            background-color: red;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: transform; */
+            transition-property: all;
+            /* jab hum translate ko delete marge enter karenge toh transition hote time color cahnge hoga and wapas transition add karenge tab color change hoga */
+            /* or */
+            /* transition-property: background-color, transform;
+            transition-duration: 4s;
+            transition-timing-function:ease-in-out ;
+            transition-delay: 1s; */
+            transition: all 4s ease-in-out 1s;
+            /* ise  sab function sath me likh sakte hai */
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            /* scale(2) lagane se size increase ho jayegi */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+    
+
+</body>
+</html>
