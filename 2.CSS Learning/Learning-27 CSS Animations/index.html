@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(168, 226, 226);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            /* animation-name: Animation; */
+            /* animation-duration: 4s; */
+            /* reload karne par animation chalega */
+            /* animation-iteration-count: 2; */
+            /* animation 2 baar chalega */
+            /* animation-timing-function: cubic-bezier(0, 0.74, 0, 0.93); */
+            /* animation-delay: 2s; */
+            /* 2second late start hoga*/
+            /* animation-direction: reverse; */
+            /* animation ulta jho jayega */
+            /* animation-play-state: paused; */
+            /* pause karte hi jaha hai vaha ruk jayega pausing ko running karte hih jaha ruka tha vahi se start ho jayega */
+            animation: Animation 4s ease-in-out 1 4s forwards ;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* short tarike se likh sakte hai hum isko */
+            /* forwards lagte hi jaha tak chalna hai vaha tak chalega fir ruk jayega 
+            and backward karte hi jaha se chala tha vaha aa kar ruk jayega */
+            animation: Animation 4s ease-in-out 4s 1,
+            a2 4s ease-in-out 4s 1 ;
+            /* multiple function ke liye yeh wali form use kar sakte hai */
+
+
+        }
+
+        @keyframes Animation{
+            from{
+                background-color: red;
+                
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes a2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+            transform: rotate(310deg);    
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
