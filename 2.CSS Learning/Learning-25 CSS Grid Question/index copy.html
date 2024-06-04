@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        
+        @media only screen and (max-width:1200px) {
+            body{
+               
+            .container {
+                position: relative;
+                bottom: 100px;
+                right: 170px;
+                grid-template-rows: 275px 50px 275px 50px 275px;
+                grid-template-columns: 0px;
+                margin-bottom: 100px;
+                justify-content:center;
+                align-items: center;
+             }
+
+            nav{
+                flex-direction: column;
+                
+                align-content: center;
+            }
+            ul {
+                flex-direction: column;
+                
+            }
+            li{
+                width: 150px;
+                box-shadow: 1px 1px 4px gray;
+                border: 2px solid white;
+                border-radius: 10px;
+                text-align:center;
+                margin-top: 10px;
+                padding-left: 40px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                list-style-type:disc;
+                margin-right: 40px;
+                margin-left: 40px;
+                
+            }
+            .box2 {
+                position: relative;
+                left: 180px;
+                bottom: 30px;
+                border: 2px solid white;
+                border-radius: 10px;
+                box-shadow: 2px 2px 2px gray;
+                
+            }
+            .box1{
+                position: relative;
+                top: 0px;
+                right: 220px;
+                top: 7px;
+                box-shadow: 2px 2px 2px gray;
+                
+                
+            }
+            
+        }
+     }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        nav {
+            margin-top: 10px;
+            margin-right: 100px;
+            display: flex;
+            justify-content: end;
+            /* judtify-content :space around bhi use kar sakte hai */
+        }
+
+        .boxes {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box1 {
+            margin-left: 250px;
+            background-color: black;
+            color: yellow;
+            border-radius: 4px;
+            padding: 1px;
+            height: 35px;
+            width: 30px;
+        }
+
+        .box2 {
+            margin-right: 400px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+
+        li>a {
+            margin-right: 50px;
+            padding: 10px;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        .container {
+            margin-top: 100px;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 120px 120px 200px;
+            justify-content: center;
+            align-items: center;
+            column-gap: 200px;
+            grid-template-rows: 240px 100px 220px;
+
+        }
+
+        .item {
+            background-color: rgba(193, 192, 192, 0.323);
+            height: 130px;
+            width: 300px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            font-weight: 700;
+
+        }
+
+
+        .b {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            gap: 80px;
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 11px;
+            grid-template-rows: 1px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bit {
+            height: 29px;
+            width: 100px;
+            align-content: center;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .c1 {
+            height: 30px;
+            justify-self: center;
+            width: 100px;
+            background-color: rgb(23, 187, 252);
+            margin-left: 10px;
+            padding-top: 10px;
+            border-radius: 5px;
+        }
+
+        .c2 {
+            height: 30px;
+            justify-self: center;
+            width: 100px;
+            background-color: rgb(54, 245, 54);
+            margin-left: 10px;
+            padding-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <h1 class="boxes box1">UE</h1>
+            <h1 class="boxes box2">UltraEdit</h1>
+            <li><a class="box" href="/">Products</a></li>
+            <li><a class="box" href="/">Pricing </a></li>
+            <li><a class="box" href="/">Resource</a></li>
+            <li><a class="box" href="/">About us</a></li>
+            <li><a class="box" href="/">🗨</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="item item-1">English
+            <div class="b">
+                <div class="c1"><a class="bit bit1" href="/">Download 32-bit</a></div>
+                <div class="c2"><a class="bit bit2" href="https://downloads.ultraedit.com">Download 62-bit</a></div>
+
+            </div>
+        </div>
+
+        <div class="item">Deutsch <div class="b">
+                <div class="c1"><a class="bit bit1" href="/">Download 32-bit</a></div>
+                <div class="c2"><a class="bit bit2" href="/">Download 62-bit</a></div>
+
+            </div>
+        </div>
+
+        <div class="item">Italiano
+            <div class="b">
+                <div class="c1"><a class="bit bit1" href="/">Download 32-bit</a></div>
+                <div class="c2"><a class="bit bit2" href="/">Download 62-bit</a></div>
+
+            </div>
+        </div>
+
+        <div class="item item-4">Espanol
+            <div class="b">
+                <div class="c1"><a class="bit bit1" href="/">Download 32-bit</a></div>
+                <div class="c2"><a class="bit bit2" href="/">Download 62-bit</a></div>
+
+            </div>
+        </div>
+
+        <div class="item item-5">francais
+            <div class="b">
+                <div class="c1"><a class="bit bit1" href="/">Download 32-bit</a></div>
+                <div class="c2"><a class="bit bit2" href="/">Download 62-bit</a></div>
+
+            </div>
+        </div>
+
+
+</body>
+
+</html>
