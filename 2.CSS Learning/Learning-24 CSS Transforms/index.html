@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.5turn); */
+            /* 1turn means 360degree rotate hoke apni jagah par vapas */
+            /* transform: rotateX(40deg); */
+            /* x me 40degree rotate ho jayega and y and z se bhi rotate kar sakte hai */
+            /* transform: scale(1.5); */
+            /* transform: scaleX(1.5); */
+            /* x,y and z me bhi rotate kar sakte hai */
+            /* 1.5 time bada ho jayega */
+            /* transform: skew(5deg); */
+            /* Skew means  kichna x and y me bi same thing kar sakte hai and skew z-axis me nhi kar sakte hai */
+
+            /* transform: translateX(100%); */
+            /* means apni 100% width se khisak jayega and px me bhi likh sakte and xand y bhi kar sakte hai */
+            /* ise transform me ek se jyada properties bhi laga sakte hia */
+            /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+
+            /* transform: rotate(55deg); */
+            /* transform-origin: 0%-0%; */
+            /* 0,0 origin ke about rotate hoga and agar origin badhayenge x and y me jaise 20,0 toh 20 ke about rotate hoga */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* box joh likha hai voh center me jayega */
+        }
+
+        .container {
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>
