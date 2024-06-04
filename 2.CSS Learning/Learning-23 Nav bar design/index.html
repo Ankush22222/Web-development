@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+            /* judtify-content :space around bhi use kar sakte hai */
+        }
+
+        .boxes {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box1 {
+            margin-left: 250px;
+            background-color: black;
+            color: yellow;
+            border-radius: 4px;
+            padding: 1px;
+            height: 35px;
+            width: 30px;
+        }
+
+        .box2 {
+            margin-right: 400px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+
+        a {
+            margin-right: 50px;
+            padding: 10px;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <h1 class="boxes box1">UE</h1>
+            <h1 class="boxes box2">UltraEdit</h1>
+            <li><a class="box" href="/">Products</a></li>
+            <li><a class="box" href="/">Pricing </a></li>
+            <li><a class="box" href="/">Resource</a></li>
+            <li><a class="box" href="/">About us</a></li>
+            <li><a class="box" href="/">🗨</a></li>
+
+        </ul>
+    </nav>
+
+</body>
+
+</html>
