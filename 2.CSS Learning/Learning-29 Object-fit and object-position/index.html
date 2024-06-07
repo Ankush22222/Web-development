@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-position</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /* background-color: rgb(180, 237, 218); */
+            /* background-position: top right; */
+            /* ise background-image ko position de sakte hai */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Fq7zcpefckG8uoliEBDmBqcYPQUD4-TF9g&s");
+            /* ab yeh ek background lag gay hai */
+            /* hamri image x ya me choti hai toh usme repeat hogi x and y me */
+            background-repeat: no-repeat;
+            /* ise x and  y me repeat nhi hoga and agar ham chahte hai ki yeh x and y mese kisi ek me repeat ho toh voh bhi kar sakte hai */
+            /* background-clip: border-box; */
+            /* background clip me hum border ya padding vagra likh sakte hai */
+
+        }
+
+        img{
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; */
+            /* ise aspect ratio maintain rahega ise image cut ho jayegi*/
+            object-fit: contain;
+            /* isme image cut nhi hoga */
+            /* object-fit: cover; */
+            /* object-position: top right ; */
+            /* ise top right wala position rahega baki cut jayega 
+            iske liye object fit property jaruri hai lagani*/
+            /* object-fit: fill; */
+            /*width and height di hai woh image par lag jayegi ise picture kharab dekhegi  */
+            /* object-fit: scale-down; */
+            /* ise image scale down ho jayegi */
+            /* object-position: 10px 10px; */
+            /* ise set bhi kar sakte hai hum isko */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Fq7zcpefckG8uoliEBDmBqcYPQUD4-TF9g&s" alt=""> -->
+    </div>
+    
+</body>
+</html>
