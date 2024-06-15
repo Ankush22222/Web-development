@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+.nav{
+    height: 34px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(4, 16, 76);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 0px orange;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    
+    
+}
+
+a:hover {
+    color: rgb(65, 64, 64);
+}
+
+
+ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    justify-content:center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+.title{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(4, 16, 76);
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.background{ 
+    background-image: url(3d\ Printing.jpeg);
+    height: 700px;
+    width: 100%;
+    background-size: max(500px, 40vw);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    
+}
+
+.span{
+    /* height: calc(100% - 62px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    gap: 20px;
+    filter: blur(0px);
+}
+
+.img{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.button {
+   position: absolute;
+    padding-top: 5px;
+    background-color: rgba(128, 128, 128, 0.508);
+    width: 252px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button1{
+    margin-top: 220px;
+    margin-right: 818px;
+}
+
+.button2{
+    margin-top: 220px;
+    margin-right: 273px;
+}
+
+.button3{
+    margin-top: 220px;
+    margin-left: 273px;
+}
+
+.button4{
+    margin-top: 220px;
+    margin-left: 818px;
+}
+
+.title > p{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
