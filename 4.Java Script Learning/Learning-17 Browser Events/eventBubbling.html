@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: red;
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: aquamarine;
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .container {
+            background-color: blue;
+            margin: 14px;
+            padding: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            // e.stopPropagation se bubbling stop ho jayegi
+            alert("Child was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container was clicked")
+        })
+        // BY DEFAULT--> jab hum child container par click karenge toh alert aayega and bubbling hoga
+
+
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        // setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor()
+        // }, 2000);
+        // ise clear karne ke liye clearInterval(1) kar denge
+        // ise har 2 second me color change hoga isme hum kuch bhi set kar sakte hai
+
+        setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor()
+        }, 2000);
+        // ise clear karne ke liye clearTimeout(1) kar denge
+        // ise sirf 1 baar color chnage ho jayega and fir ruk jayega
+    </script>
+</body>
+
+</html>

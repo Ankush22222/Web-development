@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            margin: 20px 20px;
+            height: 170px;
+            width: 1500px;
+            background-color: black;
+            color: white;
+            display: flex;
+            border-radius: 20px;
+            font-family: sans-serif;
+        }
+
+        img {
+            border-radius: 20px;
+            margin-left: 1px;
+            margin-top: 1px;
+        }
+
+        .duration {
+            position: absolute;
+            margin-top: 140px;
+            margin-left: 228px;
+            background-color: rgba(0, 0, 0, 0.236);
+            padding-left: 14px;
+            border-radius: 5px;
+            height: 23px;
+            width: 40px;
+        }
+
+        #detail {
+            display: flex;
+            position: absolute;
+            top: 70px;
+            left: 340px;
+            gap: 20px;
+            color: gray;
+        }
+
+        .title {
+            position: absolute;
+            top: 30px;
+            left: 340px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src=" https:encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDReOVxV49qt2W3Rsz30-_2MH70rgcDgwWWA&s"
+                    alt="image">
+            </div>
+            <div class="duration"></div>
+            <div class="title"></div>
+            <div id="detail">
+                <div class="cname"></div>
+                <div class="views"></div>
+                <div class="monthsold"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
