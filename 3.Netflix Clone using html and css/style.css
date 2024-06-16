@@ -8,7 +8,7 @@ body {
 }
 
 .main {
-    background-image: url(Asets/images/pg.jpg);
+    background-image: url(pg.jpg);
     background-position: center center;
     background-size: max(1498px, 105vw);
     background-repeat: no-repeat;
@@ -33,7 +33,9 @@ nav {
     align-items: center;
     height: 62px;
 }
-
+    .logo{
+    color: rgb(229, 9, 20);
+}
 nav img {
     color: red;
     width: 114px;
