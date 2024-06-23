@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is our backend learning",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "naam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "i": "^0.3.7",
+    "npm": "^10.8.1",
+    "slugify": "^1.6.6"
+  }
+}

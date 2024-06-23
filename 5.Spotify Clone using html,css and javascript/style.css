@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width: 25vw;
+    padding: 5px;
+}
+
+.right{
+    width: 75vw;
+   margin: 16px 0;
+  
+
+}
+.home{
+    
+}
+.home div{
+    margin-left: 13px;
+}
+
+.home ul li{
+    list-style: none;
+    width: 14px;
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+    font-weight: 600;
+
+}
+
+.heading{
+    display: flex;
+    font-size: 11px;
+    gap: 14px;
+    padding: 14px;
+    font-weight: 700;
+    align-items: center;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.library{
+    min-height: 71vh;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer a{
+    color: gray;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+   
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(28, 27, 27, 0.781);
+    width: 75vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+
+}
+
+
+.header > *{
+    padding: 20px;
+}
+
+.spotify h1{
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.spotify {
+    padding: 16px;
+}
+
+.spotify .card{
+    margin-top: 10px;
+    width: 170px;
+    border-radius: 7px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.card img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.card p{
+    color: gray;
+}
+
+.cardContainer :hover{
+    background-color:  rgb(31, 31, 31);
+}
+    
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+
