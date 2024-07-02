@@ -41,5 +41,8 @@ console.log(obj)
 // const a = require("./mymodule2.js")
 // console.log(a)
 
+//  yah pazr common js ka use ho raha hai
+
+
 // const syntax purane code me use hota hai
 // import modern syntax me use hota hai 

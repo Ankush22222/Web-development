@@ -1,7 +1,7 @@
 // isko hum computer me run karate hai backend ko ise hum 
 
 // npm install karke package lock json ko la sakte hai hum node module ko bhi ab hum slugify ko copy karke istemal kar sakte hai
-// npm init kareke hum ise la sakte hai ISE HUM PACKAGE JSON KO CREATE KAR SAK6TE HAI
+// npm init kareke hum ise la sakte hai ISE HUM PACKAGE JSON KO CREATE KAR SAKTE HAI
 
 
 var slugify = require('slugify')
